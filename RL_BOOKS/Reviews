@@ -1,0 +1,121 @@
+About the book "Reinforcement Learning: An Introduction" by Richard S. Sutton and Andrew G. Barto:
+Richard Sutton hosts the book on his official website with this statement:
+
+“You are welcome to download these books and to redistribute them.”  
+— Richard S. Sutton, on his official Reinforcement Learning book page
+
+This applies to both the first edition and the second edition (draft).
+
+This is not just “open access” — it is explicit permission from the copyright holder to redistribute the PDF.
+
+Here, we mirror it for educational or research purposes.
+
+There are no license restrictions beyond normal attribution courtesy.
+
+
+  Core takeaway
+
+The book builds the entire conceptual and mathematical framework of reinforcement learning (RL):
+how an agent learns to make sequential decisions through trial and error, guided only by rewards. 
+It introduces the key ideas—value functions, policies, temporal‑difference learning, 
+function approximation, and planning—and shows how they fit together into a unified theory.
+
+  High‑level structure of the book
+
+1. The RL Problem
+Defines RL as learning through interaction with an environment.
+
+Introduces agents, states, actions, rewards, and returns.
+
+Frames RL problems using Markov Decision Processes (MDPs).
+
+2. Multi‑armed Bandits
+Simplest RL setting: choosing among actions with unknown reward distributions.
+
+Explores exploration vs. exploitation, ε‑greedy, UCB, and gradient bandits.
+
+Establishes the core tension of RL: learning vs. acting.
+
+3. Finite Markov Decision Processes
+Formalizes MDPs mathematically.
+
+Defines value functions, Bellman equations, and optimality.
+
+Sets the stage for dynamic programming and TD learning.
+
+4. Dynamic Programming (DP)
+Shows how to compute optimal policies when the environment model is known.
+
+Introduces policy evaluation, policy iteration, and value iteration.
+
+Highlights DP’s limitations: requires a perfect model and is computationally heavy.
+
+5. Monte Carlo Methods
+Learn value functions from experience, without a model.
+
+Uses full episodes to estimate returns.
+
+Introduces first‑visit and every‑visit MC, plus MC control.
+
+6. Temporal‑Difference (TD) Learning
+The book’s signature contribution.
+
+TD combines DP’s bootstrapping with MC’s sampling.
+
+Introduces TD(0), SARSA, Q‑learning, and Expected SARSA.
+
+Shows why TD is more efficient and widely used.
+
+7. n‑step Bootstrapping
+Generalizes MC and TD into a spectrum of methods.
+
+Introduces n‑step TD, n‑step SARSA, and n‑step tree backup.
+
+8. Planning and Learning
+Integrates model‑based and model‑free RL.
+
+Introduces the Dyna architecture, where an agent learns a model and uses it for planning.
+
+Discusses priority sweeping and search‑control methods.
+
+9. On‑policy vs. Off‑policy Learning
+Explains how to learn from behavior different from the target policy.
+
+Covers importance sampling, off‑policy TD, and off‑policy control.
+
+10. Function Approximation
+Moves beyond tabular RL to large or continuous state spaces.
+
+Introduces linear function approximation and gradient methods.
+
+Sets the foundation for deep RL (though deep networks are not the book’s focus).
+
+11. Eligibility Traces
+A unifying idea connecting MC and TD.
+
+Introduces TD(λ), SARSA(λ), and Q(λ).
+
+Shows how traces speed up learning by crediting past states.
+
+12. Policy Gradient Methods
+Covers REINFORCE, actor‑critic, and stochastic gradient ascent.
+
+Introduces the idea of directly optimizing the policy rather than value functions.
+
+13. Psychology and Neuroscience Connections
+Discusses how RL relates to human and animal learning.
+
+Connects TD learning to dopamine signals in the brain.
+
+14. Frontiers and Open Problems
+Explores challenges like:
+
+exploration
+
+hierarchical RL
+
+partial observability
+
+generalization
+
+transfer learning
